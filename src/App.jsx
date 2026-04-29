@@ -2,16 +2,17 @@ import { useState } from 'react'
 import './App.css'
 
 function App() {
-  const [carro, setCarro] = useState('BMW')
-  function trocarDeCarro(){
-    setCarro("mustang")
+  const [tela, setTela] = useState('login')
+  const trocarDeTela = (pagina) => {
+    setTela(pagina)
+
     
   }
 
   return (
     <>
-      <h1>{carro}</h1>
-      <button onClick={trocarDeCarro}>trocar de carro</button>
+      <button onClick={trocarDeTela('cadastro')}>Cadastro</button>
+      <button onClick={trocarDeTela('login')}>login</button>
     </>
   )
 }
