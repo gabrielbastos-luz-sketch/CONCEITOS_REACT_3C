@@ -1,5 +1,12 @@
+import { useState } from "react"
+
 export default function Login(){
+    const [email, setEmail] = useState('')
+    const [senha, setSenha] = useState('')
+
     return(
-        <h1>Login</h1>
+        <div>
+
+        </div>
     )
 }
